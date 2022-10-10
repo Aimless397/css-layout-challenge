@@ -1,0 +1,97 @@
+.sidebarContainer {
+  background-color: var(--color1);
+  display: grid;
+  grid-template-rows: 10% 1fr 1fr;
+}
+
+.gradientContainer {
+  grid-row: 1/2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebarItemContainer {
+  border-bottom: 1px solid var(--color3)
+}
+
+.rectangleGradient {
+  background: linear-gradient(to right, rgba(255, 156, 6, 1), rgba(255, 106, 92, 1), rgba(197, 125, 154, 1), rgba(111, 156, 241, 1));
+  border-radius: 5px;
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding: 1.5em 1rem;
+  align-items: center;
+}
+
+.itemIcon {
+  justify-self: center;
+  grid-column: 1/2;
+  font-size: var(--font14);
+}
+
+.itemText {
+  grid-column: 2/3;
+  color: var(--color3);
+  font-size: var(--font14);
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.optionsGroup {
+  display: grid;
+  background: var(--color2);
+  border-radius: 10px;
+  padding: 2em 0.5em;
+  gap: 1em 0.5em;
+  width: 60%;
+}
+
+.optionsItem FontAwesomeIcon {
+  grid-column: 1/2;
+}
+
+.optionsItemText {
+  grid-column: 2/3;
+  color: var(--color4);
+  font-size: var(--font14);
+}
+
+.buttonContainer {
+  background: var(--color5);
+  display: flex;
+  padding: 0.5em;
+  width: 60%;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buttonContainer span {
+  color: var(--color6);
+  margin: 0 auto;
+  font-size: var(--font13);
+}
+
+.linkItem {
+  grid-column: 2/3;
+  padding: 0.5em;
+  background: var(--color7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+}

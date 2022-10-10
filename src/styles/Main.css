@@ -1,0 +1,236 @@
+.mainContainer {
+  background: var(--color8);
+}
+
+/* SEARCH BLOCK */
+
+.searchContainer {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  background: var(--color9);
+  width: 90%;
+  border-radius: 3px;
+  padding: 0.5em 0.5em;
+  display: grid;
+  grid-template-columns: 2% 97%;
+  gap: 1%;
+}
+
+.searchBar FontAwesomeIcon {
+  width: 5%;
+  grid-column: 1/2;
+}
+
+.searchInput {
+  padding-left: 0.5em;
+  border: 0px;
+  width: 97%;
+  grid-column: 2/3;
+}
+
+.searchInput:focus-visible {
+  outline: none;
+}
+
+/* SECTION BLOCKS */
+
+.sectionBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30% span;
+  padding: 1em;
+}
+
+.sectionBlock h2 {
+  font-weight: normal;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  color: var(--color1);
+  font-size: var(--font20);
+}
+
+.sectionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font20);
+}
+
+.sectionBlock h4 {
+  font-weight: 400;
+  grid-column: 2/3;
+  justify-self: end;
+  color: var(--color1);
+  font-size: var(--font13);
+}
+
+.boxContainer {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: flex;
+}
+
+.projectBox {
+  min-width: 8em;
+  max-height: 10em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: var(--color9);
+  border-radius: 10px;
+  margin: 0 0.5em;
+  height: 120px;
+  width: 180px;
+}
+
+.box-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.orangeBox {
+  background: var(--color5);
+  height: 25px;
+  width: 28px;
+  display: flex;
+  align-self: end;
+  justify-self: center;
+}
+
+.shadowBox {
+  box-shadow: -5px 5px 0 0 var(--color12);
+}
+
+.circleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--color9);
+  display: inline-block;
+  border: 1px solid var(--color11);
+  display: flex;
+  align-self: end;
+  justify-self: center;
+}
+
+.blue {
+  border: 1px solid var(--color15);
+}
+
+.red {
+  border: 1px solid var(--color16);
+}
+
+.yellow {
+  border: 1px solid var(--color5);
+}
+
+.circle2 {
+  margin-left: -7px;
+}
+
+.circle3 {
+  margin-left: -7px;
+  font-size: var(--font8);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.projectBox .iconContainer {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  color: var(--color11);
+  padding: 10px 12px 0 0;
+}
+
+#iconContainer .optionsIcon {
+  transform: rotate(90deg);
+}
+
+.nameProject {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  font-size: var(--font13);
+  margin-top: auto;
+  padding: 0 0 0 15px;
+}
+
+.dateProject {
+  color: var(--color13);
+  grid-column: 1/3;
+  grid-row: 3/4;
+  font-size: var(--font10);
+  padding: 5px 0 0 15px;
+}
+
+.sectionBlock table {
+  grid-column: 1/3;
+  border-spacing: 0 10px;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+tr, td {
+  color: var(--color3);
+  font-weight: 400;
+  font-size: var(--font13);
+}
+
+.row {
+  background: var(--color9);
+}
+
+tr td:first-child {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+tr td:last-child {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.nameContainer {
+  display: flex;
+  padding: 1em;
+  color: var(--color1)
+}
+
+.nameBox {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+td .iconContainer span {
+  color: var(--color3);
+}
+
+td .iconContainer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: var(--color11);
+  padding-right: 1em;
+}
